@@ -6,10 +6,10 @@ Basic Predictive Modeling using different Machine Learning Algorithms(RandomFore
 ## Feature importance and Model Training
 first we find out the feature importance of every feature in our dataset using correlation matrix, then train the model for 3 highly correlated features and by adding 1 feature and train the model corresponding to it and do it by adding every feature. then find out the maximum R2-score and corresponding to that features and tune the model on only that features and improve the performance of the model. 
 
-## RandomForestRegressor
+## 1. RandomForestRegressor
 selecting fetures which give maximum model score and after that tune model corresponding to that features.
 
-R2-Score = 0.853603
+Max R2-Score = 0.853603
 
 cols_rf =                        ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long','year']
 
@@ -22,10 +22,13 @@ RMSE: 128395.62081052011
 
 R-squared score: 0.8688127402530751
 
-## XGBRegressor
+### best model hyperparameters
+{'max_depth': None, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 400}
+
+## 2. XGBRegressor
 selecting fetures which give maximum model score and after that tune model corresponding to that features.
 
-R2-Score = 0.855639
+Max R2-Score = 0.855639
 
 cols_xgb = ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long','year']
 
@@ -38,10 +41,13 @@ RMSE: 111335.22207182866
 
 R-squared score: 0.9013592428916465
 
-## KNeighborsRegressor
+### best model hyperparameters
+{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 500, 'reg_lambda': 10.0}
+
+## 3. KNeighborsRegressor
 selecting fetures which give maximum model score and after that tune model corresponding to that features.
 
-R2-Score = 0.783069
+Max R2-Score = 0.783069
 
 cols_knn = ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long']
 
@@ -53,6 +59,9 @@ MSE: 25852651824.071915
 RMSE: 160787.5984772206
 
 R-squared score: 0.7942706116770583
+
+### best model hyperparameters
+{'n_neighbors': 7}
 
 ## dataset
 The dataset for this project originates from the UCI Machine Learning Repository. It serves to show a basic trend in the house pricing in terms of its location, the area of construction, its interior, etc.
