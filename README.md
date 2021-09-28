@@ -13,7 +13,7 @@ Max R2-Score = 0.853603
 
 cols_rf =                        ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long','year']
 
-### RandomForestRegressor fine-tunning
+### RandomForestRegressor fine-tunning result
 MAE: 69115.63485263214
 
 MSE: 16485435443.318863
@@ -32,7 +32,7 @@ Max R2-Score = 0.855639
 
 cols_xgb = ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long','year']
 
-### XGBRegressor fine-tunning
+### XGBRegressor fine-tunning result
 MAE: 64405.91650993441
 
 MSE: 12395531673.783403
@@ -51,7 +51,7 @@ Max R2-Score = 0.783069
 
 cols_knn = ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long']
 
-### KNeighborsRegressor fine-tunning
+### KNeighborsRegressor fine-tunning result
 MAE: 89896.66655643741
 
 MSE: 25852651824.071915
