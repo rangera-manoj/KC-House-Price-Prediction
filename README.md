@@ -11,7 +11,7 @@ selecting fetures which give maximum model score and after that tune model corre
 
 R2-Score = 0.853603
 
-cols_rf = ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long','year']
+cols_rf =                        ['sqft_living','grade','sqft_above','sqft_living15','bathrooms','view','sqft_basement','bedrooms','lat','waterfront','floors','yr_renovated','sqft_lot','sqft_lot15','yr_built','condition','long','year']
 
 ### RandomForestRegressor fine-tunning
 MAE: 69115.63485263214
